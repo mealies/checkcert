@@ -48,9 +48,7 @@ changelog:
   sort: asc
   filters:
     exclude:
-      - '^docs:'
-      - '^test:'
-      - '^ci:'
-      - '^Merge pull request'
+      - "^docs:"
+      - "^test:"
 
 
