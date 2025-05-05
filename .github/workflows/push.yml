@@ -1,10 +1,16 @@
 name: Go
-on: [push]
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+
 
 jobs:
   build:
     runs-on: ubuntu-latest
-  
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -18,3 +24,10 @@ jobs:
         run: go vet ./...
       - name: Mod verify
         run: go mod verify
+
+      - name: Run GoReleaser build check
+        uses: goreleaser/goreleaser-action@v5
+        with:
+          distribution: goreleaser
+          version: latest
+          args: build --snapshot --clean
