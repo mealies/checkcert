@@ -1,4 +1,4 @@
-# checkert [![Build Status](https://github.com/mealies/checkert/actions/workflows/push.yml/badge.svg)](https://github.com/mealies/checkert/actions/workflows/push.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/mealies/checkert)](https://goreportcard.com/report/github.com/mealies/checkert)
+# checkert [![Build Status](https://github.com/mealies/checkcert/actions/workflows/push.yml/badge.svg)](https://github.com/mealies/checkcert/actions/workflows/push.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/mealies/checkcert)](https://goreportcard.com/report/github.com/mealies/checkcert)
 
 A Go-based replacement for my shell script
 
