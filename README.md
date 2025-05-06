@@ -13,11 +13,24 @@ Check certificate on an specific host (load-balancer)
 checkcert -address site.drewbell.net -sni www.drewbell.net
 ```
 
+Check a local certificate file
+```
+checkcert -cert mycert.pem
+```
+
+Check a directory of certificates
+```
+checkcert -cert /path/to/certs/
+
+```
+
 Full help
 ```
 Usage of checkcert:
   -address string
     	Address to connect to (required)
+  -cert string
+        Path to certificate file or directory to check
   -port string
     	Port to check (default: 443) (default "443")
   -sni string
